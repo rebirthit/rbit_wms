@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    
+    <!-- base : 템플릿에 설정된 페이지의 구성 요소에 대한 실제 파일을 지정합니다. -->
+	<definition name="base" template="/WEB-INF/jsp/template/base_template.jsp">
+	    <put-attribute name="gnb"   value="/WEB-INF/jsp/template/base_gnb.jsp" />
+	    <put-attribute name="lnb"   value="/WEB-INF/jsp/template/base_lnb.jsp" />
+	    <put-attribute name="rnb"   value="/WEB-INF/jsp/template/base_rnb.jsp" />
+	    <put-attribute name="footer"   value="/WEB-INF/jsp/template/base_footer.jsp" />
+	</definition>
+	
+	<!-- base를 확장하여 */*의 url로 시작되는 호웇ㄹ이 오는 경우 아래 설정에 의해서 페이지를 노출합니다. -->
+	<definition name="*/*" extends="base">
+       <put-attribute name="body"   value="/WEB-INF/jsp/{1}/{2}.jsp" />
+    </definition>
+    
+    <!-- base를 확장하여 */*/*의 url로 시작되는 호웇ㄹ이 오는 경우 아래 설정에 의해서 페이지를 노출합니다. -->
+    <definition name="*/*/*" extends="base">
+       <put-attribute name="body"   value="/WEB-INF/jsp/{1}/{2}/{3}.jsp" />
+    </definition>
+    
+    <definition name="*/*/*" extends="base">
+       <put-attribute name="body"   value="/WEB-INF/jsp/{1}/{2}/{3}.jsp" />
+    </definition>
+    
+    <!-- base : 템플릿에 설정된 페이지의 구성 요소에 대한 실제 파일을 지정합니다. -->
+    <definition name="/login/login" template="/WEB-INF/jsp/template/base_template.jsp">
+        <put-attribute name="body"   value="/WEB-INF/jsp/login/login.jsp" />
+    </definition>
+</tiles-definitions>
