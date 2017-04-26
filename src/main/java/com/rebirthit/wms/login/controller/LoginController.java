@@ -1,5 +1,6 @@
 package com.rebirthit.wms.login.controller;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 
 import org.slf4j.Logger;
@@ -8,16 +9,25 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.rebirthit.wms.login.service.LoginService;
 import com.rebirthit.wms.login.vo.LoginVO;
 
 @Controller
 @RequestMapping(value="/login")
 public class LoginController {
 	
+	/**
+	 * Logger
+	 */
 	private final static Logger logger = LoggerFactory.getLogger(LoginController.class);
+	
+	@Resource(name = "loginService")
+	private LoginService loginService;
 	
 	@RequestMapping(value="/login")
 	public String login() throws Exception {
+		logger.info("testPostgreSQL || " + loginService.testPostgreSQL());
+		
 		return "/login/login";
 	}
 	
