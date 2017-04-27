@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<net.java.amateras.db.visual.model.RootModel>
+  <listeners serialization="custom">
+    <java.beans.PropertyChangeSupport>
+      <default>
+        <source class="net.java.amateras.db.visual.model.RootModel" reference="../../../.."/>
+        <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+      </default>
+      <null/>
+    </java.beans.PropertyChangeSupport>
+  </listeners>
+  <children>
+    <net.java.amateras.db.visual.model.TableModel>
+      <listeners serialization="custom">
+        <java.beans.PropertyChangeSupport>
+          <default>
+            <source class="net.java.amateras.db.visual.model.TableModel" reference="../../../.."/>
+            <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+          </default>
+          <null/>
+        </java.beans.PropertyChangeSupport>
+      </listeners>
+      <constraint>
+        <height>-1</height>
+        <width>-1</width>
+        <x>18</x>
+        <y>10</y>
+      </constraint>
+      <sourceConnections/>
+      <targetConnections>
+        <net.java.amateras.db.visual.model.ForeignKeyModel>
+          <listeners serialization="custom">
+            <java.beans.PropertyChangeSupport>
+              <default>
+                <source class="net.java.amateras.db.visual.model.ForeignKeyModel" reference="../../../.."/>
+                <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+              </default>
+              <null/>
+            </java.beans.PropertyChangeSupport>
+          </listeners>
+          <source class="net.java.amateras.db.visual.model.TableModel">
+            <listeners serialization="custom">
+              <java.beans.PropertyChangeSupport>
+                <default>
+                  <source class="net.java.amateras.db.visual.model.TableModel" reference="../../../.."/>
+                  <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+                </default>
+                <null/>
+              </java.beans.PropertyChangeSupport>
+            </listeners>
+            <constraint>
+              <height>-1</height>
+              <width>-1</width>
+              <x>336</x>
+              <y>9</y>
+            </constraint>
+            <sourceConnections>
+              <net.java.amateras.db.visual.model.ForeignKeyModel reference="../../.."/>
+            </sourceConnections>
+            <targetConnections>
+              <net.java.amateras.db.visual.model.ForeignKeyModel>
+                <listeners serialization="custom">
+                  <java.beans.PropertyChangeSupport>
+                    <default>
+                      <source class="net.java.amateras.db.visual.model.ForeignKeyModel" reference="../../../.."/>
+                      <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+                    </default>
+                    <null/>
+                  </java.beans.PropertyChangeSupport>
+                </listeners>
+                <source class="net.java.amateras.db.visual.model.TableModel">
+                  <listeners serialization="custom">
+                    <java.beans.PropertyChangeSupport>
+                      <default>
+                        <source class="net.java.amateras.db.visual.model.TableModel" reference="../../../.."/>
+                        <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+                      </default>
+                      <null/>
+                    </java.beans.PropertyChangeSupport>
+                  </listeners>
+                  <constraint>
+                    <height>-1</height>
+                    <width>-1</width>
+                    <x>336</x>
+                    <y>277</y>
+                  </constraint>
+                  <sourceConnections>
+                    <net.java.amateras.db.visual.model.ForeignKeyModel reference="../../.."/>
+                  </sourceConnections>
+                  <targetConnections/>
+                  <error></error>
+                  <linkedPath></linkedPath>
+                  <tableName>SITE_SVER_INFO</tableName>
+                  <logicalName>사이트서버정보</logicalName>
+                  <description>사이트의 제품 당 IP정보를 관리한다.</description>
+                  <columns>
+                    <net.java.amateras.db.visual.model.ColumnModel>
+                      <columnName>SITE_CD</columnName>
+                      <logicalName>사이트코드</logicalName>
+                      <columnType class="net.java.amateras.db.dialect.ColumnType">
+                        <name>CHARACTER</name>
+                        <logicalName>Character</logicalName>
+                        <supportSize>true</supportSize>
+                        <type>1</type>
+                      </columnType>
+                      <size>5</size>
+                      <notNull>true</notNull>
+                      <primaryKey>true</primaryKey>
+                      <description>사이트코드</description>
+                      <autoIncrement>false</autoIncrement>
+                      <defaultValue></defaultValue>
+                    </net.java.amateras.db.visual.model.ColumnModel>
+                    <net.java.amateras.db.visual.model.ColumnModel>
+                      <columnName>SITE_DETL_CD</columnName>
+                      <logicalName>사이트상세코드</logicalName>
+                      <columnType class="net.java.amateras.db.dialect.ColumnType" reference="../../net.java.amateras.db.visual.model.ColumnModel/columnType"/>
+                      <size>5</size>
+                      <notNull>true</notNull>
+                      <primaryKey>true</primaryKey>
+                      <description>사이트상세코드</description>
+                      <autoIncrement>false</autoIncrement>
+                      <defaultValue></defaultValue>
+                    </net.java.amateras.db.visual.model.ColumnModel>
+                  </columns>
+                  <indices/>
+                  <backgroundColor>
+                    <red>255</red>
+                    <green>255</green>
+                    <blue>206</blue>
+                  </backgroundColor>
+                  <sql></sql>
+                </source>
+                <target class="net.java.amateras.db.visual.model.TableModel" reference="../../.."/>
+                <foreignKeyName>SITE_SVER_INFO_FK_1</foreignKeyName>
+                <references/>
+              </net.java.amateras.db.visual.model.ForeignKeyModel>
+            </targetConnections>
+            <error></error>
+            <linkedPath></linkedPath>
+            <tableName>SITE_DETL_INFO</tableName>
+            <logicalName>사이트상세정보</logicalName>
+            <description>사이트 상세정보를 관리한다.</description>
+            <columns>
+              <net.java.amateras.db.visual.model.ColumnModel>
+                <columnName>SITE_CD</columnName>
+                <logicalName>사이트코드</logicalName>
+                <columnType class="net.java.amateras.db.dialect.ColumnType" reference="../../../targetConnections/net.java.amateras.db.visual.model.ForeignKeyModel/source/columns/net.java.amateras.db.visual.model.ColumnModel/columnType"/>
+                <size>5</size>
+                <notNull>true</notNull>
+                <primaryKey>true</primaryKey>
+                <description>사이트코드를 관리한다.SITE_MSTR 테이블의 SITE_CD에 종속된다.</description>
+                <autoIncrement>false</autoIncrement>
+                <defaultValue></defaultValue>
+              </net.java.amateras.db.visual.model.ColumnModel>
+              <net.java.amateras.db.visual.model.ColumnModel>
+                <columnName>SITE_DETL_CD</columnName>
+                <logicalName>사이트상세코드</logicalName>
+                <columnType class="net.java.amateras.db.dialect.ColumnType">
+                  <name>CHARACTER</name>
+                  <logicalName>Character</logicalName>
+                  <supportSize>true</supportSize>
+                  <type>1</type>
+                </columnType>
+                <size>5</size>
+                <notNull>true</notNull>
+                <primaryKey>true</primaryKey>
+                <description>사이트상세코드 00001.PMS 01001.회원관리C/S 010002.회원관리LITE 01003.회원관리WEB 02001.주차관리시스템V1 020002.주차관리시스템V2</description>
+                <autoIncrement>false</autoIncrement>
+                <defaultValue></defaultValue>
+              </net.java.amateras.db.visual.model.ColumnModel>
+              <net.java.amateras.db.visual.model.ColumnModel>
+                <columnName>SITE_LCNS_CD</columnName>
+                <logicalName>사이트라이센스코드</logicalName>
+                <columnType class="net.java.amateras.db.dialect.ColumnType">
+                  <name>VARCHAR</name>
+                  <logicalName>String</logicalName>
+                  <supportSize>true</supportSize>
+                  <type>12</type>
+                </columnType>
+                <size>50</size>
+                <notNull>false</notNull>
+                <primaryKey>false</primaryKey>
+                <description>사이트라이센스코드</description>
+                <autoIncrement>false</autoIncrement>
+                <defaultValue></defaultValue>
+              </net.java.amateras.db.visual.model.ColumnModel>
+              <net.java.amateras.db.visual.model.ColumnModel>
+                <columnName>LCNS_STRT_YMD</columnName>
+                <logicalName>라이센스시작일자</logicalName>
+                <columnType class="net.java.amateras.db.dialect.ColumnType">
+                  <name>VARBIT</name>
+                  <logicalName>Bit</logicalName>
+                  <supportSize>true</supportSize>
+                  <type>-7</type>
+                </columnType>
+                <size>8</size>
+                <notNull>false</notNull>
+                <primaryKey>false</primaryKey>
+                <description>라이센스시작일자</description>
+                <autoIncrement>false</autoIncrement>
+                <defaultValue></defaultValue>
+              </net.java.amateras.db.visual.model.ColumnModel>
+              <net.java.amateras.db.visual.model.ColumnModel>
+                <columnName>LCNS_FNSH_YMD</columnName>
+                <logicalName>라이센스종료일자</logicalName>
+                <columnType class="net.java.amateras.db.dialect.ColumnType" reference="../../net.java.amateras.db.visual.model.ColumnModel[4]/columnType"/>
+                <size>8</size>
+                <notNull>false</notNull>
+                <primaryKey>false</primaryKey>
+                <description>라이센스종료일자</description>
+                <autoIncrement>false</autoIncrement>
+                <defaultValue></defaultValue>
+              </net.java.amateras.db.visual.model.ColumnModel>
+              <net.java.amateras.db.visual.model.ColumnModel>
+                <columnName>USE_YN</columnName>
+                <logicalName>사용여부</logicalName>
+                <columnType class="net.java.amateras.db.dialect.ColumnType">
+                  <name>CHARACTER</name>
+                  <logicalName>Character</logicalName>
+                  <supportSize>true</supportSize>
+                  <type>1</type>
+                </columnType>
+                <size>1</size>
+                <notNull>true</notNull>
+                <primaryKey>false</primaryKey>
+                <description>사이트 정보 사용여부</description>
+                <autoIncrement>false</autoIncrement>
+                <defaultValue>Y</defaultValue>
+              </net.java.amateras.db.visual.model.ColumnModel>
+              <net.java.amateras.db.visual.model.ColumnModel>
+                <columnName>FRST_RGST_DT</columnName>
+                <logicalName>최초등록일시</logicalName>
+                <columnType class="net.java.amateras.db.dialect.ColumnType">
+                  <name>TIMESTAMP</name>
+                  <logicalName>Datetime</logicalName>
+                  <supportSize>false</supportSize>
+                  <type>93</type>
+                </columnType>
+                <size>10</size>
+                <notNull>true</notNull>
+                <primaryKey>false</primaryKey>
+                <description>최초등록일시</description>
+                <autoIncrement>false</autoIncrement>
+                <defaultValue></defaultValue>
+              </net.java.amateras.db.visual.model.ColumnModel>
+              <net.java.amateras.db.visual.model.ColumnModel>
+                <columnName>FRST_RGST_USER_ID</columnName>
+                <logicalName>최초등록자ID</logicalName>
+                <columnType class="net.java.amateras.db.dialect.ColumnType">
+                  <name>VARCHAR</name>
+                  <logicalName>String</logicalName>
+                  <supportSize>true</supportSize>
+                  <type>12</type>
+                </columnType>
+                <size>20</size>
+                <notNull>true</notNull>
+                <primaryKey>false</primaryKey>
+                <description>최초등록자ID</description>
+                <autoIncrement>false</autoIncrement>
+                <defaultValue></defaultValue>
+              </net.java.amateras.db.visual.model.ColumnModel>
+              <net.java.amateras.db.visual.model.ColumnModel>
+                <columnName>FRST_RGST_IP</columnName>
+                <logicalName>최초등록IP</logicalName>
+                <columnType class="net.java.amateras.db.dialect.ColumnType" reference="../../net.java.amateras.db.visual.model.ColumnModel[8]/columnType"/>
+                <size>30</size>
+                <notNull>true</notNull>
+                <primaryKey>false</primaryKey>
+                <description>최초등록IP</description>
+                <autoIncrement>false</autoIncrement>
+                <defaultValue></defaultValue>
+              </net.java.amateras.db.visual.model.ColumnModel>
+              <net.java.amateras.db.visual.model.ColumnModel>
+                <columnName>LAST_MDFY_DT</columnName>
+                <logicalName>최종수정일시</logicalName>
+                <columnType class="net.java.amateras.db.dialect.ColumnType" reference="../../net.java.amateras.db.visual.model.ColumnModel[7]/columnType"/>
+                <size>10</size>
+                <notNull>true</notNull>
+                <primaryKey>false</primaryKey>
+                <description>최종수정일시</description>
+                <autoIncrement>false</autoIncrement>
+                <defaultValue></defaultValue>
+              </net.java.amateras.db.visual.model.ColumnModel>
+              <net.java.amateras.db.visual.model.ColumnModel>
+                <columnName>LAST_MDFY_USER_ID</columnName>
+                <logicalName>최종수정자ID</logicalName>
+                <columnType class="net.java.amateras.db.dialect.ColumnType" reference="../../net.java.amateras.db.visual.model.ColumnModel[8]/columnType"/>
+                <size>20</size>
+                <notNull>true</notNull>
+                <primaryKey>false</primaryKey>
+                <description>최종수정자ID</description>
+                <autoIncrement>false</autoIncrement>
+                <defaultValue></defaultValue>
+              </net.java.amateras.db.visual.model.ColumnModel>
+              <net.java.amateras.db.visual.model.ColumnModel>
+                <columnName>LAST_MDFY_IP</columnName>
+                <logicalName>최종수정IP</logicalName>
+                <columnType class="net.java.amateras.db.dialect.ColumnType" reference="../../net.java.amateras.db.visual.model.ColumnModel[8]/columnType"/>
+                <size>30</size>
+                <notNull>true</notNull>
+                <primaryKey>false</primaryKey>
+                <description>최종수정IP</description>
+                <autoIncrement>false</autoIncrement>
+                <defaultValue></defaultValue>
+              </net.java.amateras.db.visual.model.ColumnModel>
+            </columns>
+            <indices/>
+            <backgroundColor>
+              <red>255</red>
+              <green>255</green>
+              <blue>206</blue>
+            </backgroundColor>
+            <sql></sql>
+          </source>
+          <target class="net.java.amateras.db.visual.model.TableModel" reference="../../.."/>
+          <foreignKeyName>SITE_DETL_INFO_FK_1</foreignKeyName>
+          <references/>
+        </net.java.amateras.db.visual.model.ForeignKeyModel>
+      </targetConnections>
+      <error></error>
+      <linkedPath></linkedPath>
+      <tableName>SITE_MSTR</tableName>
+      <logicalName>사이트마스터</logicalName>
+      <description>사이트 마스터정보를 관리한다.</description>
+      <columns>
+        <net.java.amateras.db.visual.model.ColumnModel>
+          <columnName>SITE_CD</columnName>
+          <logicalName>사이트코드</logicalName>
+          <columnType class="net.java.amateras.db.dialect.ColumnType" reference="../../../targetConnections/net.java.amateras.db.visual.model.ForeignKeyModel/source/targetConnections/net.java.amateras.db.visual.model.ForeignKeyModel/source/columns/net.java.amateras.db.visual.model.ColumnModel/columnType"/>
+          <size>5</size>
+          <notNull>true</notNull>
+          <primaryKey>true</primaryKey>
+          <description>사이트코드</description>
+          <autoIncrement>false</autoIncrement>
+          <defaultValue></defaultValue>
+        </net.java.amateras.db.visual.model.ColumnModel>
+        <net.java.amateras.db.visual.model.ColumnModel>
+          <columnName>SITE_NM</columnName>
+          <logicalName>사이트명</logicalName>
+          <columnType class="net.java.amateras.db.dialect.ColumnType">
+            <name>VARCHAR</name>
+            <logicalName>String</logicalName>
+            <supportSize>true</supportSize>
+            <type>12</type>
+          </columnType>
+          <size>100</size>
+          <notNull>true</notNull>
+          <primaryKey>false</primaryKey>
+          <description>사이트명을 관리한다.</description>
+          <autoIncrement>false</autoIncrement>
+          <defaultValue></defaultValue>
+        </net.java.amateras.db.visual.model.ColumnModel>
+        <net.java.amateras.db.visual.model.ColumnModel>
+          <columnName>SITE_AUTH_CD</columnName>
+          <logicalName>사이트권한코드</logicalName>
+          <columnType class="net.java.amateras.db.dialect.ColumnType">
+            <name>CHARACTER</name>
+            <logicalName>Character</logicalName>
+            <supportSize>true</supportSize>
+            <type>1</type>
+          </columnType>
+          <size>5</size>
+          <notNull>true</notNull>
+          <primaryKey>false</primaryKey>
+          <description>사이트권한을 관리한다.</description>
+          <autoIncrement>false</autoIncrement>
+          <defaultValue></defaultValue>
+        </net.java.amateras.db.visual.model.ColumnModel>
+        <net.java.amateras.db.visual.model.ColumnModel>
+          <columnName>USE_YN</columnName>
+          <logicalName>사용여부</logicalName>
+          <columnType class="net.java.amateras.db.dialect.ColumnType" reference="../../../targetConnections/net.java.amateras.db.visual.model.ForeignKeyModel/source/columns/net.java.amateras.db.visual.model.ColumnModel[6]/columnType"/>
+          <size>1</size>
+          <notNull>true</notNull>
+          <primaryKey>false</primaryKey>
+          <description>사이트 사용여부</description>
+          <autoIncrement>false</autoIncrement>
+          <defaultValue>Y</defaultValue>
+        </net.java.amateras.db.visual.model.ColumnModel>
+        <net.java.amateras.db.visual.model.ColumnModel>
+          <columnName>FRST_RGST_DT</columnName>
+          <logicalName>최초등록일시</logicalName>
+          <columnType class="net.java.amateras.db.dialect.ColumnType">
+            <name>TIMESTAMP</name>
+            <logicalName>Datetime</logicalName>
+            <supportSize>false</supportSize>
+            <type>93</type>
+          </columnType>
+          <size>10</size>
+          <notNull>true</notNull>
+          <primaryKey>false</primaryKey>
+          <description>최초등록일시를 관리한다.</description>
+          <autoIncrement>false</autoIncrement>
+          <defaultValue></defaultValue>
+        </net.java.amateras.db.visual.model.ColumnModel>
+        <net.java.amateras.db.visual.model.ColumnModel>
+          <columnName>FRST_RGST_USER_ID</columnName>
+          <logicalName>최초등록자ID</logicalName>
+          <columnType class="net.java.amateras.db.dialect.ColumnType" reference="../../net.java.amateras.db.visual.model.ColumnModel[2]/columnType"/>
+          <size>20</size>
+          <notNull>true</notNull>
+          <primaryKey>false</primaryKey>
+          <description>최초등록자의 ID를 관리한다.</description>
+          <autoIncrement>false</autoIncrement>
+          <defaultValue></defaultValue>
+        </net.java.amateras.db.visual.model.ColumnModel>
+        <net.java.amateras.db.visual.model.ColumnModel>
+          <columnName>FRST_RGST_IP</columnName>
+          <logicalName>최초등록IP</logicalName>
+          <columnType class="net.java.amateras.db.dialect.ColumnType" reference="../../net.java.amateras.db.visual.model.ColumnModel[2]/columnType"/>
+          <size>30</size>
+          <notNull>true</notNull>
+          <primaryKey>false</primaryKey>
+          <description>최초등록자의 IP정보를 관리한다.</description>
+          <autoIncrement>false</autoIncrement>
+          <defaultValue></defaultValue>
+        </net.java.amateras.db.visual.model.ColumnModel>
+        <net.java.amateras.db.visual.model.ColumnModel>
+          <columnName>LAST_MDFY_DT</columnName>
+          <logicalName>최종수정일시</logicalName>
+          <columnType class="net.java.amateras.db.dialect.ColumnType" reference="../../net.java.amateras.db.visual.model.ColumnModel[5]/columnType"/>
+          <size>10</size>
+          <notNull>true</notNull>
+          <primaryKey>false</primaryKey>
+          <description>최종수정일시를 관리한다.</description>
+          <autoIncrement>false</autoIncrement>
+          <defaultValue></defaultValue>
+        </net.java.amateras.db.visual.model.ColumnModel>
+        <net.java.amateras.db.visual.model.ColumnModel>
+          <columnName>LAST_MDFY_USER_ID</columnName>
+          <logicalName>최종수정자ID</logicalName>
+          <columnType class="net.java.amateras.db.dialect.ColumnType" reference="../../net.java.amateras.db.visual.model.ColumnModel[2]/columnType"/>
+          <size>20</size>
+          <notNull>true</notNull>
+          <primaryKey>false</primaryKey>
+          <description>최종수정자의 ID를 관리한다.</description>
+          <autoIncrement>false</autoIncrement>
+          <defaultValue></defaultValue>
+        </net.java.amateras.db.visual.model.ColumnModel>
+        <net.java.amateras.db.visual.model.ColumnModel>
+          <columnName>LAST_MDFY_IP</columnName>
+          <logicalName>최종수정자IP</logicalName>
+          <columnType class="net.java.amateras.db.dialect.ColumnType" reference="../../net.java.amateras.db.visual.model.ColumnModel[2]/columnType"/>
+          <size>30</size>
+          <notNull>true</notNull>
+          <primaryKey>false</primaryKey>
+          <description>최종수정자의 IP정보를 관리한다.</description>
+          <autoIncrement>false</autoIncrement>
+          <defaultValue></defaultValue>
+        </net.java.amateras.db.visual.model.ColumnModel>
+      </columns>
+      <indices/>
+      <backgroundColor>
+        <red>255</red>
+        <green>255</green>
+        <blue>206</blue>
+      </backgroundColor>
+      <sql></sql>
+    </net.java.amateras.db.visual.model.TableModel>
+    <net.java.amateras.db.visual.model.TableModel reference="../net.java.amateras.db.visual.model.TableModel/targetConnections/net.java.amateras.db.visual.model.ForeignKeyModel/source"/>
+    <net.java.amateras.db.visual.model.TableModel reference="../net.java.amateras.db.visual.model.TableModel/targetConnections/net.java.amateras.db.visual.model.ForeignKeyModel/source/targetConnections/net.java.amateras.db.visual.model.ForeignKeyModel/source"/>
+  </children>
+  <dommains/>
+  <dialectName>PostgreSQL</dialectName>
+  <logicalMode>false</logicalMode>
+  <jarFile></jarFile>
+  <jdbcDriver>sun.jdbc.odbc.JdbcOdbc</jdbcDriver>
+  <jdbcUrl>localhost:5432/rbit_wms</jdbcUrl>
+  <jdbcUser>postgresql</jdbcUser>
+  <jdbcPassword>postgresql</jdbcPassword>
+  <jdbcSchema>public</jdbcSchema>
+  <jdbcCatalog></jdbcCatalog>
+  <includeView>true</includeView>
+  <fontData></fontData>
+</net.java.amateras.db.visual.model.RootModel>
