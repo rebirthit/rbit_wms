@@ -466,8 +466,8 @@
   <jarFile></jarFile>
   <jdbcDriver>sun.jdbc.odbc.JdbcOdbc</jdbcDriver>
   <jdbcUrl>localhost:5432/rbit_wms</jdbcUrl>
-  <jdbcUser>rbitadmin</jdbcUser>
-  <jdbcPassword>rbit0688</jdbcPassword>
+  <jdbcUser>postgresql</jdbcUser>
+  <jdbcPassword>postgresql</jdbcPassword>
   <jdbcSchema>public</jdbcSchema>
   <jdbcCatalog></jdbcCatalog>
   <includeView>true</includeView>
