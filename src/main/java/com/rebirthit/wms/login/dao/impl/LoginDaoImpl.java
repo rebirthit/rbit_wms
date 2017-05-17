@@ -1,4 +1,4 @@
-package com.rebirthit.wms.login.service.impl;
+package com.rebirthit.wms.login.dao.impl;
 
 import org.springframework.stereotype.Repository;
 
